@@ -17,9 +17,13 @@ class UntitledTestCase(unittest.TestCase):
     
     def test_untitled_test_case(self):
         driver = self.driver
-        driver.get("http://localhost/addressbook/group.php")
+        driver.get("http://localhost/addressbook/")
         driver.find_element_by_name("user").click()
-        driver.find_element_by_xpath("//input[@value='Login']").click()
+        driver.find_element_by_name("user").clear()
+        driver.find_element_by_name("user").send_keys("admin")
+        driver.find_element_by_name("pass").clear()
+        driver.find_element_by_name("pass").send_keys("secret")
+        driver.find_element_by_id("LoginForm").submit()
         driver.find_element_by_link_text("groups").click()
         driver.find_element_by_name("new").click()
         driver.find_element_by_name("group_name").click()
@@ -34,8 +38,6 @@ class UntitledTestCase(unittest.TestCase):
         driver.find_element_by_name("submit").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("Logout").click()
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys("admin")
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
