@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_add_group.UntitledTestCase">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="Python tests for test_add_group.UntitledTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,9 +78,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.Python tests for test_add_group.UntitledTestCase" />
         <item itemvalue="Python tests.Python tests for test_add_group.UntitledTestCase.test_untitled_test_case" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
       </list>
     </recent_temporary>
   </component>
